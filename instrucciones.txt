@@ -1,0 +1,11 @@
+Primero:
+xvfb-run java -Dwebdriver.chrome.driver=/usr/bin/chromedriver -jar selenium-server-standalone-3.13.0.jar
+
+Segundo:
+export CLASSPATH=".:selenium-server-standalone-3.13.0.jar:testng-6.8.7.jar"
+
+Tercero:
+javac TecAdminSeleniumTest.java
+
+Cuarto:
+java TecAdminSeleniumTest.java
