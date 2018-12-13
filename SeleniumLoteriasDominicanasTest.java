@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
  
-public class TecAdminSeleniumTest {
+public class SeleniumLoteriasDominicanasTest {
  
         public static void main(String[] args) throws IOException, InterruptedException {
                 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");

@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
  
-public class TecAdminSeleniumTest {
+public class SeleniumConectateTest {
  
         public static void main(String[] args) throws IOException, InterruptedException {
                 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
@@ -19,11 +19,11 @@ public class TecAdminSeleniumTest {
  
                 WebDriver driver = new ChromeDriver(chromeOptions);
  
-                driver.get("https://loteriasdominicanas.com/");
+                driver.get("https://www.conectate.com.do/");
 
                 //List<WebElement> sorteos = new ArrayList<>();xpath=////div[@id='conectate_lottery-2']/table/tbody/tr/td/span
 
-                List<WebElement> sorteos = driver.findElements(By.xpath("//div[3]//div[2]//span"));
+                List<WebElement> sorteos = driver.findElements(By.xpath("//div[@id='conectate_lottery-2']/table/tbody/tr/td"));
 
                 //List<WebElement> sorteos = driver.findElement(By.xpath("//tr[5]/td[2]/span[3]"));
                 List<String> valores = new ArrayList<>();
